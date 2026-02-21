@@ -1,6 +1,12 @@
-const cursor = document.querySelector(".cursor");
+const enterBtn = document.getElementById("enterBtn");
+const intro = document.getElementById("intro");
+const mainContent = document.getElementById("mainContent");
 
-document.addEventListener("mousemove", (e) => {
-  cursor.style.left = e.clientX + "px";
-  cursor.style.top = e.clientY + "px";
+enterBtn.addEventListener("click", () => {
+  intro.style.opacity = "0";
+
+  setTimeout(() => {
+    intro.style.display = "none";
+    mainContent.classList.remove("hidden");
+  }, 1000);
 });

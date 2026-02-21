@@ -2,64 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pradnya Suryawanshi</title>
+  <title>Pradnya. — Designer Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <div class="cursor"></div>
+<!-- ================= INTRO SCREEN ================= -->
 
-  <header class="hero">
-    <h1>Hi, I'm <span>Your Name</span></h1>
-    <p class="tagline">Designer. Builder. Brand Energy.</p>
-    <a href="#projects" class="cta">View My Work</a>
-  </header>
+<section class="intro" id="intro">
+  <div class="girl-container">
+    
+    <!-- Minimal SVG Girl Silhouette -->
+    <svg viewBox="0 0 300 400" class="girl">
+      <path class="hair" d="M80 120 Q150 20 220 120 Q230 200 200 260 Q150 300 100 260 Q70 200 80 120 Z" />
+      <circle cx="150" cy="180" r="40" class="face"/>
+      <rect x="110" y="220" width="80" height="120" rx="40" class="body"/>
+    </svg>
 
-  <section class="about">
-    <div class="about-text">
-      <h2>Not your average portfolio.</h2>
-      <p>
-        I create experiences that feel premium, intentional, and magnetic.
-        I blend branding, design, and strategy into work that actually moves people.
-      </p>
-    </div>
+  </div>
+
+  <div class="intro-text">
+    <h1>Oh... you're here.</h1>
+    <p>I'm Pradnya.</p>
+    <button id="enterBtn">Enter my world</button>
+  </div>
+</section>
+
+
+<!-- ================= MAIN PORTFOLIO ================= -->
+
+<main id="mainContent" class="hidden">
+
+  <nav class="navbar">
+    <div class="logo">Pradnya.</div>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">Resume</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Design that feels intentional.</h2>
+    <p>I build brands and digital experiences that move people.</p>
   </section>
 
   <section id="projects" class="projects">
+    <h2 class="section-title">Selected Work</h2>
 
     <div class="project">
-      <div class="project-text">
-        <h3>Project One</h3>
-        <p>Brand strategy & website for a luxury startup.</p>
+      <div class="project-info">
+        <h3>Élan Studio</h3>
+        <p>Luxury brand identity & website design.</p>
       </div>
-      <div class="project-img"></div>
+      <div class="project-box"></div>
     </div>
 
     <div class="project reverse">
-      <div class="project-text">
-        <h3>Project Two</h3>
-        <p>Modern UI system with bold typography.</p>
+      <div class="project-info">
+        <h3>Nova App</h3>
+        <p>Minimal UI system & product experience.</p>
       </div>
-      <div class="project-img"></div>
+      <div class="project-box"></div>
     </div>
 
     <div class="project">
-      <div class="project-text">
-        <h3>Project Three</h3>
-        <p>Conversion-focused landing page design.</p>
+      <div class="project-info">
+        <h3>Maison Atelier</h3>
+        <p>Editorial portfolio redesign.</p>
       </div>
-      <div class="project-img"></div>
+      <div class="project-box"></div>
     </div>
 
   </section>
 
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I design with emotion and intention.  
+      Every pixel has a reason.  
+      Every interaction tells a story.
+    </p>
+  </section>
+
+  <section id="resume" class="resume">
+    <h2>Resume</h2>
+    <a href="#" class="resume-btn">Download CV</a>
+  </section>
+
   <footer>
-    <p>© 2026 Your Name. Built with taste.</p>
+    <p>© 2026 Pradnya. Built with intention.</p>
   </footer>
 
-  <script src="script.js"></script>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
